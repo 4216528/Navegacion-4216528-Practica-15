@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Navegacion_4216528.MainPage">
+
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="cambio.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos un button para ir a la App cambio -->
+
+            <Button Margin="10,10,10,10" Text="App cambio" x:Name="AppCambio" Clicked="AppCambio_Clicked"/>
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="triangulo.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos un button para ir a la App superficie triangulo -->
+
+            <Button Margin="10,10,10,10" Text="App superficie triangulo" x:Name="AppSuperficieTriangulo" Clicked="AppSuperficieTriangulo_Clicked"/>
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="dinosaurio.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos un button para ir a la App dinosaurio -->
+
+            <Button Margin="10,10,10,10" Text="App dinosaurio" x:Name="AppDinosaurio" Clicked="AppDinosaurio_Clicked"/>
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="gasolinera.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos un button para ir a la App gasolinera -->
+
+            <Button Margin="10,10,10,10" Text="App gasolinera" x:Name="AppGasolinera" Clicked="AppGasolinera_Clicked"/>
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="acerca.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos un button para ir a la App acerca -->
+
+            <Button Margin="10,10,10,10" Text="Acerca" x:Name="Acerca" Clicked="Acerca_Clicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

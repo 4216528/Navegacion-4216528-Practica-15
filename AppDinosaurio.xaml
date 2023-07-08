@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Navegacion_4216528.AppDinosaurio"
+             
+             Title="AppDinosaurio">
+    
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="dinosaurio.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese el nombre del dinosaurio"/>
+
+            <!-- Creamos un Entry para ingresar el nombre del dinosaurio -->
+
+            <Entry Margin="10,10,10,10" Placeholder="ingrese el nombre del dinosaurio" x:Name="Nombre" />
+
+            <!-- Agregamos un label con sus propiedades correspondientes -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese el peso del dinosaurio en kilogramos "/>
+
+            <!-- Creamos un Entry para ingresar el peso del dinosaurio en kilogramos  -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="ingrese el peso del dinosaurio en kilogramos" x:Name="PesoKilogramos" />
+
+            <!-- Agregamos un label con sus propiedades correspondientes -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese la altura en metros del dinosaurio "/>
+
+            <!-- Creamos un Entry para ingresar la altura en metros del dinosaurio -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="ingrese la altura en metros del dinosaurio" x:Name="AlturaMetros" />
+
+            <!-- Agregamos un label uno para mostrar el nombre del dinosaurio -->
+
+            <Label TextColor="Purple" FontSize="19" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="NombreDinosaurio"/>
+
+            <!-- Agregamos dos label uno para mostrar el resultado y el otro para un texto personalizado -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="El peso en libras es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="PesoLibras"/>
+
+            <!-- Agregamos dos label uno para mostrar el resultado y el otro para un texto personalizado -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="La altura en centimetros es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="AlturaCentimetros"/>
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Convertir" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

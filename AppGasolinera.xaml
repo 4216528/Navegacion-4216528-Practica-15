@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Navegacion_4216528.AppGasolinera"
+             
+             Title="AppGasolinera">
+    
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="gasolinera.png" 
+
+                   WidthRequest="150"
+                   
+                   HeightRequest="150"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese la cantidad de galones surtidos"/>
+
+            <!-- Creamos un Entry para ingresar la cantidad de galones -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="ingrese la cantidad de galones" x:Name="GalonesSurtidos" />
+
+            <!-- Agregamos un label con sus propiedades correspondientes -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese el precio a cobrar por litro"/>
+
+            <!-- Creamos un Entry para ingresar el precio por litro  -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="ingrese el precio por litro" x:Name="PrecioLitro" />
+
+            <!-- Agregamos dos label uno para mostrar el resultado y el otro para un texto personalizado -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Monto a cobrar"/>
+
+            <Label TextColor="Purple" FontSize="19" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="Monto"/>
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Calcular" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

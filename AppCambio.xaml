@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Navegacion_4216528.AppCambio"
+             
+             Title="AppCambio">
+    
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="cambio.png"
+                   
+                WidthRequest="150"   
+                   
+                HeightRequest="150"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese el costo del articulo"/>
+
+            <!-- Creamos un Entry para ingresar el costo del articulo -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="Costo del articulo" x:Name="Costo" />
+
+            <!-- Agregamos un label con sus propiedades correspondientes -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese el dinero entregado"/>
+
+            <!-- Creamos un Entry para ingresar el dinero entregado -->
+
+            <Entry Keyboard="Numeric" Margin="10,10,10,10" Placeholder="Dinero entregado" x:Name="Dinero" />
+
+            <!-- Agregamos dos label con sus propiedades correspondientes, el ultimo siendo para mostrar el cambio que se debe entregar -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="El cambio es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="Cambio"/>
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Calcular" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
